@@ -1,16 +1,22 @@
-const carousel = document.querySelector('.carousel');
-const anteriorBtn = document.getElementById('anterior');
-const proximoBtn = document.getElementById('proximo');
-const Sim = document.getElementById('sim');
-const larguraImagem = carousel.clientWidth;
+let count = 1;
+let countn = 4;
+document.getElementById('radio1').checked = true;
 
-anteriorBtn.addEventListener('click', () => {
-  carousel.scrollBy(-larguraImagem, 0);
-});
+setInterval(function(){
+    nextImage();
+}, 3000)
 
-proximoBtn.addEventListener('click', () => {
-  carousel.scrollBy(larguraImagem, 0);
-});
-Sim.addEventListener('click', () => {
-  alert("Sim");
-});
+function nextImage(){
+    if(count<4){
+        count++
+        document.getElementById('radio'+count).checked = true;
+    }else if(countn>1){
+        countn--
+        document.getElementById('radio'+countn).checked = true;
+    }else{
+        count = 2;
+        countn = 4;
+        document.getElementById('radio'+count).checked = true;
+    }
+
+}
