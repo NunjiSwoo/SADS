@@ -1,0 +1,130 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#96665d,#2b222c);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    display: flex;
+    background-color: #bc8a68;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  /* Estilos da navegação */
+  nav {
+    width: 100%;
+    background-color: #96625d;
+    color: #fff;
+    padding: 10px;
+    padding-left: 9%;
+  }
+  
+  nav a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+  }
+  /* Estilos da Box */
+  .Box{
+    background-color: rgba(206, 186, 109, 0.8);
+    width: 80%;
+    margin: 20px;
+    margin-left: 10%;
+    border:2px solid #4e3837;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Box section{
+    text-align: justify;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  .Box h2{
+    font-size: 23px;
+  }
+  
+  .Box p{
+    font-size: 18px;
+  }
+  
+  .Box img{
+    width: 100%;
+  }
+  
+  .Paralel{
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Group{
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1000%;
+  }
+  
+  main{
+    color: #FFF;
+    padding-bottom: 10%;
+  }
+  /* Estilos do rodapé */
+  footer {
+    background-color: #2b222c;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+  }
+  /* Estilizando a barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 10px; /* Largura da barra */
+  }
+  
+  /* Estilizando o polegar da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #ceba6d; /* Cor do polegar */
+    border-radius: 5px; /* Raio de borda do polegar */
+  }
+  
+  /* Estilizando o polegar quando o usuário estiver interagindo com a barra de rolagem */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #bc8a68; /* Cor do polegar ao passar o mouse */
+  }
+  
+  /* Estilizando o polegar quando estiver ativo (clicado e arrastado) */
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #555; /* Cor do polegar ao clicar e arrastar */
+  }
+  

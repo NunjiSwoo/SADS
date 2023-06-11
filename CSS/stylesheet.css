@@ -47,11 +47,6 @@ nav li {
   display: inline;
   margin-right: 10px;
 }
-
-nav ul li a {
-  color: #dedede;
-  text-decoration: none;
-}
 /* Estilos da Box */
 .Box{
   background-color: rgba(206, 186, 109, 0.8);
