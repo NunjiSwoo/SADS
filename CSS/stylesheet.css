@@ -64,10 +64,29 @@ nav ul li a {
 }
 
 .Box section{
+  text-align: justify;
   margin-left: 5%;
   width: 90%;
 }
 
+.Box h2{
+  font-size: 23px;
+}
+
+.Box p{
+  font-size: 18px;
+}
+
+.Box img{
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.Paralel{
+  display: flex;
+  justify-content: space-between;
+}
 main{
   color: #FFF;
   padding-bottom: 10%;
