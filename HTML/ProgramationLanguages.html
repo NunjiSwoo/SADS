@@ -26,21 +26,125 @@
                     programas funcionais e elaborar códigos utilizando diferentes linguagens, tais linguagens que 
                     possuem diferentes tipos de programação e estrutura de acordo com a necessidade do programador. 
                     Os meios para a construção de um determinado código para sua linguagem se dão através de IDEs, 
-                    tais quais podem ser expecificas para determinada linguagem gerando assim um maior aprofundamento 
-                    e recursos para a mesma ou pode ser mais versatil e comportar mais de uma, de forma que se 
+                    tais quais podem ser expecífica para determinada linguagem gerando assim um maior aprofundamento 
+                    e recursos para a mesma ou pode ser mais versátil e comportar mais de uma, de forma que se 
                     adapte a escolha do programador.
                 </p>
             </section>
         </section>
         <section class="Box">
             <section>
-                
+                <h2>Variáveis</h2>
+                <p>Variável é um nome utilizado para se referir a um valor que foi armazenado na memória de algum componente físico para a execução de um programa, ou seja é um espaço aonde pode ser definido um dado e este mesmo pode ou não ser utilizado no programa futuramente, geralmente uma IDE possui estes tipos de Variáveis:.</p>
+                <ul>
+                    <li>Inteiro (int): Armazena valores inteiros, como -3, 0, 42, limite: -2.147.483.648 a 2.147.483.647.</li>
+                    <li>Ponto flutuante (float): Armazena números decimais, com ponto flutuante, como 3.14, -0.5, 2.71828, seu valor mínimo é aproximadamente 1.4e-45, enquanto o valor máximo é aproximadamente 3.4e38.</li>
+                    <li>Duplo ponto flutuante (double): Similar ao float, mas com uma precisão maior, permitindo armazenar números decimais com mais casas decimais, double tem uma precisão de 15 dígitos e seu valor mínimo é aproximadamente 4.9e-324, enquanto o valor máximo é aproximadamente 1.7e308.</li>
+                    <li>Caractere (char): Armazena um único caractere, como 'a', 'C', '&', '1', seu limite é 1 caractere, mas possui diversos tipos.</li>
+                    <li>Cadeia de caracteres (string): Armazena uma sequência de caracteres, como "Olá, mundo!", "SENAI", "12345", String geralmente não há um limite fixo, sem para memória ou texto, seria o máximo o limite físico da memória disponível.</li>
+                    <li>Booleano (bool): Armazena um valor verdadeiro (true) ou falso (false), ocupa 1 bit(0 ou 1).</li>
+                </ul>
+                <h2>Exceções</h2>
+                <ul>
+                    <li>Variáveis Vazias: Uma variável vazia refere-se a uma variável que foi declarada, mas não possui um valor atribuído a ela. Isso significa que a variável foi reservada na memória, mas não contém nenhum dado de fato.</li>
+                    <li>Variáveis Nulas: Uma variável nula é uma variável que não aponta para nenhum objeto ou local de memória. Em linguagens que suportam o conceito de nulidade, como Java e Python, a nulidade é representada pelo valor especial null.</li>
+                    <li>Variáveis Indefinidas: A Variável Indefinida geralmente é usado para descrever uma variável que não foi declarada ou inicializada. Nesses casos, a variável não tem um valor específico e seu comportamento é indefinido.</li>
+                </ul>
+                <h2>Estrutura de dados</h2>
+                <p>Estrutura de dados possuem casos em que possam ser similares a variáveis, já que são informações armazenadas em partes de uma memória, mas sua principal diferença é em alguns dos seus usos e composição, de forma que possui uma composição especifica a fim de obter uma maior organização e o uso de comandos para manipular sua composição</p>
+                <ul>
+                    <li>Cadeia de caracteres (string): Como dito anteriormente a string armazena uma sequência de caracteres de forma que é adaptável de acordo com o valor concebido para ela, ela é considerada como ambos variável e estrutura de dados, dependendo apenas da linguagem utilizada, que pode a interpretar somente como uma variável ou como o Javascript que pode manipular e tratá-las como estrutura de dados.</li>
+                    <li>Tuplas: As tuplas são estruturas de dados imutáveis que podem conter vários elementos de diferentes tipos. Por exemplo pode existir uma tupla chamada "pessoa" com os elementos "Gabriel", 1.80 e "Gabriel@unimedvtrp.com.br". </li>
+                    <li>Arrays: Os arrays são estruturas de dados que armazenam uma coleção ordenada de elementos. Por exemplo pode existir um array chamado "numeros" com os valores 1, 2, 3, 4 e 5.</li>
+                    <li>Dicionários: Os dicionários são estruturas de dados que armazenam pares de chave-valor, permitindo acessar os valores pela chave correspondente. Por exemplo um dicionário chamado "pessoa" com as chaves "nome", "idade" e "email", tendo cada chave seus respectivos valores.</li>
+                    <li>Conjuntos: Os conjuntos são estruturas de dados que armazenam uma coleção de elementos únicos, sem uma ordem específica. Como em um array, porém cada valor é único e não há uma ordem definida.</li>
+                </ul>
+            </section>
+        </section>
+        <section class="Box">
+            <section>
+                <h2>Estruturas de Controle</h2>
+                <section class="Middle">
+                    <img src="/IMG/Decision.JPG" alt="" class="Half">
+                </section>
+                <p>Estruturas de controle tem como principal função definir o rumo do programa, como ele ira prosseguir de acoprdo com uma certa condição, qual pode variar a estruturação dependendo da estrutura ou linguagem, mas geralmente é em seguida da condição escolhida</p>
+                <ul>
+                    <li>If/Else: If é um tipo de condição que ira a valiar a condição em seguida, caso ela seja verdadeira, geralmente, sera utilizado chaves("{}") para dentro destas sera escrito o rumo que o código prosseguira, caso seja falso, geralmente, havera um else em seguida da area entre chaves e este pode abrir chaves e continuar com o código, porém se adicionado um if seguira a ordem como dito anteriormente</li>
+                    <li>Swith/Case/Defaut: Similiar ao if o Switch sera aplicado e em seguida uma variável, caso corresponda com algum Case inserido abaixo o código prosseguira com o que ha dentro do Case, caso não haja correspondencia entre a variável ira para o Defaut que funcionara similar ao case, também é utilizado break para separar e finalizar os Cases.</li>
+                    <li>
+                        Loops:
+                        <ul>
+                            <li>While: While é uma estrutura que tem como função executar uma parte do programa programa delimitada quantas vezes forem necessárias para sair de uma condição imposta em seguida de sua inserção, também há a possibilidade da criação de um loop infinito caso a condição nunca seja falsa.</li>
+                            <li>For: Tem a mesma função que o While, porém é um pouco mais especifico, nele você pode inserir junto da condição uma instância de uma variável, e um incremento ou decremento, o intuito deste loop é ele ter um limite pré estabelecido, porém ele pode igualmente como o while e vice-versa.</li>
+                        </ul>
+                    </li>
+                    <li>Try/Catch: Ambos são comandos mais avançados e não são necessários, porém são desejaveis, uma vez que não impactam diretamente o código quando ocorre naturalmente e sem erros, porém em caso de falhas, eles podém alterar o aviso caso algo de errado na hora de testar uma variavél e seguir como o programador desejar.</li>
+                </ul>
+                <h2>Operadores:</h2>
+                <section class="GiantMiddle">
+                    <img src="/IMG/Operators.JPG" alt="">
+                </section>
+            </section>
+        </section>
+        <section class="Box">
+            <section>
+                <h2>HTML</h2>
+                <section class="Middle">
+                    <img src="/IMG/HTML.JPG" alt="" class="Half">
+                    <p class="Half">HTML é uma linguagem de marcação usada para criar e estruturar páginas da web. Com o HTML, você pode definir elementos como cabeçalhos, parágrafos, imagens e links, além de adicionar formatação básica ao conteúdo.</p>
+                    <p class="Half">Além de somente utilizar o HTML básico é possível seguir as normas do HTML 5, caso seja disponível com a IDE (Integrated Development Environment), qual adiciona novas funções de áudio e vídeo além de tags mais autoexplicativas para cada sessão de uma página </p>
+                    <p class="Half">IDE(utilizada): Visual Studio Code</p>
+                </section>
+            </section>
+        </section>
+        <section class="Box">
+            <section>
+                <h2>CSS</h2>
+                <section class="Middle">
+                    <img src="/IMG/CSS.JPG" alt="" class="Half">
+                    <p class="Half">CSS é uma linguagem de estilo utilizada para definir a aparência de um documento HTML. O CSS permite que você controle o estilo e a formatação de elementos HTML de forma consistente em uma ou inúmeras páginas.</p>
+                    <p class="Half">No CSS algumas tags para esta costumização são: a propriedade padding é utilizada para definir o espaçamento interno de um elemento, ou seja, o espaço entre o conteúdo do elemento e sua borda. Já margin controla o espaçamento externo de um elemento, ou seja, o espaço entre o elemento e os elementos vizinhos. A propriedade background-color permite definir a cor de fundo de um elemento. Além destes também há o comando display é usado para controlar o comportamento de exibição do elemento, determinando se ele é exibido como um bloco, um inline ou um elemento de tabela.</p>
+                    <p class="Half">IDE(utilizada): Visual Studio Code</p>
+                </section>
+            </section>
+        </section>
+        <section class="Box">
+            <section>
+                <h2>JAVASCRIPT</h2>
+                <section class="Middle">
+                    <img src="/IMG/JavaScript.JPG" alt="" class="Half">
+                    <p class="Half">JavaScript é a última linguagem que utilizamos para criar e customizar um modelo de site web, de forma que esta última tem a função lógica, a qual recebera da interface com o usuário e processara uma resposta, que por muitas vezes é essencial para alguns sites específicos.</p>
+                    <p class="Half">Em JavaScript há muitos comandos para qualquer tipo de lógica, de forma até que diferentes lógicas possam ser aplicadas resultando no mesmo resultado. O comando console.log() é frequentemente utilizado para exibir mensagens ou valores no console do navegador, o que ajuda na verificação do valor das variáveis durante a execução do programa. A palavra-chave var é usada para declarar variáveis em JavaScript. O var permite a criação de variáveis com escopo de função ou escopo global. Esse comando é fundamental para a manipulação e armazenamento de dados em JavaScript.</p>
+                    <p class="Half">IDE(utilizada): Visual Studio Code</p>
+                </section>
+            </section>
+        </section>
+        <section class="Box">
+            <section>
+                <h2>C/C++</h2>
+                <section class="Middle">
+                    <img src="/IMG/C-Code.JPG" alt="" class="Half">
+                    <p class="Half">Apesar de utilizarmos somente o C em Automação, C++ é uma extensão da linguagem C que adiciona recursos orientados a objetos. Enquanto o C se concentra na programação procedural e estruturada, o C++ introduz conceitos de programação orientada a objetos, como classes, herança, polimorfismo e encapsulamento. Esses recursos permitem o desenvolvimento de programas mais modulares, reutilizáveis e flexíveis.</p>
+                    <p class="Half">Além disso, o C++ também oferece recursos adicionais, como sobrecarga de operadores, manipulação de exceções, manipulação de memória por meio de ponteiros inteligentes e suporte a templates para programação genérica. Essas adições tornam o C++ uma linguagem mais poderosa e versátil em comparação com o C, que não possui esses recursos avançados de programação orientada a objetos.</p>
+                    <p class="Half">IDE(utilizada): TinkerCad</p>
+                </section>
+            </section>
+        </section>
+        <section class="Box">
+            <section>
+                <h2>JAVA</h2>
+                <section class="Middle">
+                    <img src="/IMG/JavaCode.JPG" alt="" class="Half">
+                    <p class="Half">Java é descrito como uma linguagem de programação de alto nivel, de forma que assim como C++ possui a caracteristica de ser consolidada com ou sem o uso de programação orientada à objeto, tendo enfase ao ser destacada por sua segurança e confiabilidade.</p>
+                    <p class="Half">Um diferencial desta linguagem é o fato de ela possuir uma maquina virtual conhecida como JVM (Java Virtual Machine), onde se torna possivel a conversão para qualquer tipo de sistema opercional sem a chance de ocorrer graves erros e o código se tornar exclusivo para determinada sistema, possibili tando uma alta portabilidade entre plataformas o que resultou na sua grande popularidade e uso dentre o final dos anos 90 até o início dos anos 2000.</p>
+                    <p class="Half">IDE(utilizada): Eclipse/Visual Studio Code</p>
+                </section>
             </section>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2023 Meu Site. Todos os direitos reservados pra mim.</p>
+        <p>&copy; 2023 SENAI Sorocaba-SP, CST: ADS.</p>
     </footer>
 </body>
 </html>

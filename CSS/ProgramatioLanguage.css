@@ -48,7 +48,7 @@ body {
   }
   /* Estilos da Box */
   .Box{
-    background-color: rgba(206, 186, 109, 0.8);
+    background-color: rgba(255, 225, 104, 0.3);
     width: 80%;
     margin: 20px;
     margin-left: 10%;
@@ -70,15 +70,41 @@ body {
   .Box p{
     font-size: 18px;
   }
-  
-  .Box img{
-    width: 100%;
+
+  .Box li{
+    font-size: 18px;
+    margin-bottom: 10px;
   }
   
   .Paralel{
     width: auto;
     display: flex;
     align-items: center;
+  }
+
+  .Half{
+    width: 75%;
+  }
+
+  .GiantMiddle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .GiantMiddle img{
+    width: 60%;
+    margin-bottom: 50px;
+  }
+
+  .Middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Middle img{
+    width: 40%;
   }
   
   .Group{
@@ -100,12 +126,15 @@ body {
   footer {
     background-color: #2b222c;
     color: #ffffff;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     bottom: 0;
     right: 0;
     left: 0;
     position: fixed;
+  }
+  footer p{
+    margin: 10px;
   }
   /* Estilizando a barra de rolagem */
   ::-webkit-scrollbar {
