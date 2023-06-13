@@ -26,14 +26,20 @@
         </section>
         <section class="Box">
             <section>
+                <h2>Experiência:</h2>
+                <p>Durante as primeiras semanas de Banco de dados estudamos os conceitos de relação, entidades e chaves, de forma que em seguida formamos squads e realizamos uma lista de exercícios sobre sistemas onde deveriam ser aplicados estes relacionamentos, em seguida passamos estes para a IDE PostgreeSQL e por fim apresentamos os trabalhos com dados inseridos e as pesquisas funcionando.</p>
+            </section>
+        </section>
+        <section class="Box">
+            <section>
                 <h2>Estrutura de dados</h2>
                 <p>Uma estrutura de dados refere-se à maneira como os dados são organizados e armazenados internamente. Ela determina como os dados são representados e como as operações de leitura, escrita e manipulação são realizadas.</p>
                 <ul>
-                    <li><h2>Dados Estruturadas</h2></li>
+                    <li><h3>Dados Estruturadas</h3></li>
                     <p>Elas tem um sistema fixo e consistente, como tabelas em um banco de dados relacional. Cada campo tem um tipo de dados específico e é armazenado em uma posição bem definida. Isso permite consultas e manipulações eficientes. </p>
-                    <li><h2>Semi estruturadas</h2></li>
+                    <li><h3>Semi estruturadas</h3></li>
                     <p>Elas permitem flexibilidade na organização dos dados. Embora possuam alguma estrutura, ela não é rigidamente definida. Esses dados são geralmente representados em formatos como XML ou JSON.</p>
-                    <li><h2>Não Estruturadas</h2></li>
+                    <li><h3>Não Estruturadas</h3></li>
                     <p>As estruturas de dados não estruturadas não possuem uma organização definida. São dados que não seguem um esquema ou formato específico. Eles são caracterizados pela ausência de estrutura predefinida e podem incluir texto livre, imagens, vídeos ou áudio.</p>
                 </ul>
             </section>
@@ -51,15 +57,53 @@
             <section>
                 <h2>Comandos</h2>
                 <p>Aqui esta uma lista sobre alguns comandos básicos utilizados na IDE postgreSQL, onde estes tratam basicamente do controle e manipulamento de uma ou mais tabelas.</p>
+                
+                <h2>DQL:</h2>
                 <ul>
-                    <li><h2>CREATE TABLE</h2></li>
+                    <li><h3>SELECT</h3></li>
+                    <p>O comando SELECT é utilizado para recuperar dados de um banco de dados. Ele permite que você especifique as colunas que deseja selecionar, filtrar os registros com base em determinadas condições e ordenar os resultados.</p>
+                    <li><h3>FROM</h3></li>
+                    <p>O comando FROM é usado em conjunto com o comando SELECT para especificar a tabela ou tabelas das quais você deseja recuperar os dados. É aqui que você define a origem dos dados para a consulta.</p>
+                    <li><h3>WHERE</h3></li>
+                    <p>O comando WHERE é usado para filtrar os registros com base em condições especificadas. Com o WHERE, você pode definir critérios para selecionar apenas os registros que atendam a determinadas condições.</p>
+                </ul>
+                <h2>DML:</h2>
+                <ul>    
+                    <li><h3>INSERT</h3></li>
+                    <p>O comando INSERT é utilizado para inserir novos dados em uma tabela. Ele permite especificar os valores a serem inseridos nas colunas correspondentes. </p>
+                    <li><h3>UPDATE</h3></li>
+                    <p>O comando UPDATE é utilizado para modificar os dados existentes em uma tabela. Ele permite atualizar os valores das colunas especificadas em um ou mais registros com base em determinadas condições. </p>
+                    <li><h3>DELETE</h3></li>
+                    <p>O comando DELETE é utilizado para excluir registros de uma tabela. Ele permite remover um ou mais registros que atendam a determinadas condições.</p>
+                    <li><h3>MERGE</h3></li>
+                    <p>O comando MERGE é usado para combinar as operações de INSERT, UPDATE e DELETE em uma única instrução. Ele permite atualizar registros existentes se eles atenderem a determinadas condições ou inserir novos registros se não existirem.</p>
+                </ul>
+                <h2>DDL</h2>
+                <ul>
+                    <li><h3>CREATE</h3></li>
                     <p>Utilizado para criar uma nova tabela no banco de dados. Ao criar a tabela, você define os nomes das colunas, os tipos de dados que elas armazenarão e outras restrições, como chaves primárias ou estrangeiras.</p>
-                    <li><h2>DELETE</h2></li>
-                    <p>DELETE tem como função deletar algo em um banco de dados, de forma que sempre seja visado um cuidado ao utilizar este comando, uma vez que pode excluir toda base de dados quando usado ad maneira incorreta.</p>
-                    <li><h2>ALTER TABLE</h2></li>
+                    <li><h3>ALTER</h3></li>
                     <p>Este é utilizado para modificar a composição da estrutura de uma tabela, podendo adicionar, renomear ou remover colunas, alterar o tipo de dados de uma coluna, adicionar restrições, entre outras alterações.</p>
-                    <li><h2>DROP TABLE</h2></li>
+                    <li><h3>DROP</h3></li>
                     <p>Drop table é utilizado unico e exclusivamente para excluir uma tabela e seus dados premanentemente de um banco de dados.</p>
+                </ul>
+                <h2>DCL</h2>
+                <ul>
+                    <li><h3>GRANT</h3></li>
+                    <p>O comando GRANT é utilizado para conceder permissões e direitos de acesso a usuários ou funções em objetos de banco de dados. Ele permite especificar quais ações um usuário ou função pode realizar em determinados objetos dentro do banco de dados.</p>
+                    <li><h3>REVOKE</h3></li>
+                    <p>O comando REVOKE é usado para revogar ou remover as permissões ou direitos de acesso previamente concedidos a usuários ou funções. Ele permite remover as permissões específicas que foram concedidas anteriormente, negando o acesso aos objetos do banco de dados.</p>
+                    <li><h3>DENY</h3></li>
+                    <p>O comando DENY é utilizado para negar explicitamente as permissões a um usuário ou função em objetos de banco de dados. Ele difere do REVOKE, pois o REVOKE remove uma permissão que já foi concedida, enquanto o DENY nega explicitamente a permissão e impede que ela seja concedida novamente.</p>
+                </ul>
+                <h2>DTL</h2>
+                <ul>
+                    <li><h3>COMMIT</h3></li>
+                    <p>Confirma a transação atual, tornando todas as alterações permanentes no banco de dados. As alterações feitas dentro da transação se tornam visíveis para outras transações.</p>
+                    <li><h3>ROLLBACK</h3></li>
+                    <p>Desfaz todas as alterações realizadas na transação atual e a descarta. O banco de dados retorna ao estado anterior à transação.</p>
+                    <li><h3>SAVEPOINT</h3></li>
+                    <p>Cria um ponto de salvamento dentro de uma transação para permitir o desfazer parcial das alterações.</p>
                 </ul>
             </section>
         </section>
@@ -68,9 +112,9 @@
                 <h2>Dados e Chaves</h2>
                 <p>A IDE PostgreSQL pode comportar vários tipos de dados, dentre eles: numeros inteiros e decimais, binário, texto, booleano, etc.</p>
                 <ul>
-                    <li><h2>Chave Primária</h2></li>
+                    <li><h3>Chave Primária</h3></li>
                     <p>É basicamente um ou mais campo dentro da tabela que se torna um identificador unico da tabela, tornando assim os elementos de uma tabela identificaveis se a chance de uma busca por exemplo apontar para duas informações com dados duplicados.</p>
-                    <li><h2>Chave Extrangeira</h2></li>
+                    <li><h3>Chave Extrangeira</h3></li>
                     <p>Já a chave estrangeira é praticamente uma chave prímaria que foi inserida dentro de outra tabela, isto ocorre a fim de exibir uma relação que esta tabela tem com a da chave primária, de forma que toda tabela deve ter uma chave primária e uma estrangeira é opcional de acordo com a situação.</p>
                 </ul>
             </section>
@@ -79,11 +123,11 @@
             <section>
                 <h2>Relacionamentos</h2>
                 <ul>
-                    <li><h2>Um para Um</h2></li>
-                    <p>Um para um é um relacionamento onde um registro(linha), se conecta somente com outra linha em outra tabela</p>
-                    <li><h2>Um para Muitos</h2></li>
+                    <li><h3>Um para Um</h3></li>
+                    <p>Um para um é um relacionamento onde um registro/linha, se conecta somente com outra linha em outra tabela</p>
+                    <li><h3>Um para Muitos</h3></li>
                     <p>Um para muitos é um realionamento similar ao um para um, exceto que ele relaciona um registro com n outros.</p>
-                    <li><h2>Muitos para Muitos</h2></li>
+                    <li><h3>Muitos para Muitos</h3></li>
                     <p>Muitos para Muitos seria oposto ao um para um, de forma que ele relaciona n registro com n outros.</p>
                 </ul>
             </section>
@@ -95,7 +139,7 @@
             </section>
         </section>
     </main>
-    
+    <script src="/JS/video.js"></script>
     <footer>
         <p>&copy; 2023 SENAI Sorocaba-SP, CST: ADS.</p>
     </footer>
