@@ -16,7 +16,7 @@ body {
 /* Estilos do cabeçalho */
 header {
   display: flex;
-  background-color: hwb(236 57% 5%);
+  background-image: linear-gradient(to bottom, #9198f2, #7581ec);
   color: #000000;
   padding: 10px;
 }
@@ -36,7 +36,7 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-around;
-  transition: 0.5s;
+  box-shadow: -1px 17px 20px -2px rgba(255,255,255,0.5);
 }
 
 nav a{
@@ -46,6 +46,7 @@ nav a{
 
 nav :hover{
   font-size: large;
+  transition: 0.5s;
 }
 
 nav li {
