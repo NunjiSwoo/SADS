@@ -45,6 +45,7 @@ body {
 
   nav :hover{
     font-size: large;
+    transition: 0.5s;
   }
   
   nav li {
@@ -63,6 +64,9 @@ body {
     box-shadow: 18px 23px 30px -5px rgba(0,0,0,0.75);
   }
   
+  code{
+    font-size: 18px;
+  }
   .Box section{
     text-align: justify;
     margin-left: 1%;
@@ -111,6 +115,8 @@ body {
 
   .Middle img{
     width: 40%;
+    border-radius: 1%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   }
 
   .Image2{
