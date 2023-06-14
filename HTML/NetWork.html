@@ -21,7 +21,7 @@
         <section class="Box">
             <section>
                 <h2>Definição</h2>
-                <p>Refere-se a um conjunto de dispositivos interconectados, como computadores, servidores, roteadores e switches, que se comunicam entre si para compartilhar recursos, como arquivos, impressoras, aplicativos e conexões com a Internet, muito disto através do modelo TCP/IP que é um conjunto de protocolos de comunicação que permite a interconexão de redes de computadores.</p>
+                <p>Refere-se a um conjunto de dispositivos interconectados, como destinatárioes, servidores, roteadores e switches, que se comunicam entre si para compartilhar recursos, como arquivos, impressoras, aplicativos e conexões com a Internet, muito disto através do modelo TCP/IP que é um conjunto de protocolos de comunicação que permite a interconexão de redes de destinatárioes.</p>
             </section>
         </section>
         <section class="Box">
@@ -33,8 +33,85 @@
         <section class="Box">
             <section>
                 <h2>Modelo OSI</h2>
+                <section class="Middle">
+                    <img src="/IMG/CamadaOSI.JPG" alt="">
+
+                    <h3 class="Half">Camada Aplicativos:</h3>
+                    <p class="Half">Esta camada é responsável pela interação direta com os aplicativos e usuários finais. Ela fornece serviços de rede para aplicativos, como correio eletrônico, transferência de arquivos e acesso a bancos de dados.</p>
+                    <h3 class="Half">Camada Apresentação:</h3>
+                    <p class="Half">Esta camada trata da representação dos dados, garantindo que os dispositivos de origem e destino possam interpretar corretamente as informações transmitidas. Ela lida com a criptografia, compressão e formatação dos dados.</p>
+                    <h3 class="Half">Camada Sessão:</h3>
+                    <p class="Half">Esta camada estabelece, mantém e encerra as conexões entre os aplicativos em diferentes dispositivos. Ela gerencia as sessões de comunicação, permitindo que os aplicativos troquem dados de maneira organizada.</p>
+                    <h3 class="Half">Camada Transporte:</h3>
+                    <p class="Half">Esta camada é responsável por dividir os dados em pacotes e garantir que eles sejam entregues corretamente ao destino. Ela controla a confiabilidade da transmissão, a detecção de erros e a retransmissão, se necessário.</p>
+                    <h3 class="Half">Camada Rede:</h3>
+                    <p class="Half">A função principal dessa camada é controlar o roteamento dos dados através de uma rede. Ela determina o melhor caminho para a transmissão dos dados e lida com o endereçamento lógico dos dispositivos na rede.</p>
+                    <h3 class="Half">Camada Enlace:</h3>
+                    <p class="Half">Esta camada fornece um meio confiável de transferência de dados entre dois dispositivos diretamente conectados. Ela cuida do endereçamento físico, do controle de fluxo e da detecção de erros.</p>
+                    <h3 class="Half">Camada Física:</h3>
+                    <p class="Half">Esta camada lida com a transmissão física dos dados. Ela define as especificações elétricas, mecânicas e de hardware para a transmissão dos dados através dos meios físicos, como cabos e sinais.</p>
+                </section>
                 <h2>Topologia em redes</h2>
+                <section class="Middle">
+                    <img src="/IMG/Topologia.JPG" alt="">
+                    <ol class="Half">
+                        <li><h3>Topologia em Barramento:</h3></li>
+                        <p>Nesta topologia, todos os dispositivos são conectados a um único cabo compartilhado. Os dados são transmitidos pelo cabo e todos os dispositivos recebem esses dados, mas apenas o destinatário pretendido os processa.</p>
+                        <li><h3>Topologia em Estrela</h3></li>
+                        <p>Nesta topologia, todos os dispositivos são conectados a um ponto central, geralmente um switch ou concentrador. Os dispositivos se comunicam enviando dados para o ponto central, que os direciona para o destinatário correto.</p>
+                        <li><h3>Topologia Mista</h3></li>
+                        <p>Nessa topologia, é utilizada uma combinação de diferentes topologias, como estrela, barramento , anel, etc. Isso ocorre quando diferentes partes da rede são conectadas usando topologias diferentes, dependendo dos requisitos específicos de cada área.</p>
+                        <li><h3>Topologia em Anel</h3></li>
+                        <p>Nesta topologia, os dispositivos são conectados em uma forma de anel, onde cada dispositivo está conectado a outros dois dispositivos. Os dados são transmitidos em uma direção ao redor do anel, passando por cada dispositivo até chegar ao destinatário desejado.</p>
+                        <li><h3>Topologia em Anel Duplo:</h3></li>
+                        <p>Nesta topologia, os dispositivos são conectados em dois anéis separados, geralmente em direções opostas. Isso oferece redundância e aumenta a disponibilidade da rede, pois se um anel falhar, a comunicação pode ser redirecionada para o outro anel.</p>
+                        <li><h3>Topologia em Árvore:</h3></li>
+                        <p>Nessa topologia, os dispositivos são organizados hierarquicamente em uma estrutura de árvore. Um dispositivo central, como um switch ou roteador, é conectado a dispositivos secundários, que por sua vez estão conectados a dispositivos adicionais. Isso permite a criação de redes maiores e mais organizadas.                        </p>
+                        <li><h3>Topologia em Malha:</h3></li>
+                        <p>Nesta topologia, todos os dispositivos são conectados diretamente a todos os outros dispositivos da rede. Isso cria múltiplos caminhos de comunicação, o que aumenta a redundância e a confiabilidade da rede.</p>
+                        <li><h3>Topologia Totalmente Conectada:</h3></li>
+                        <p>Nessa topologia, todos os dispositivos estão diretamente conectados a todos os outros dispositivos da rede. Isso cria uma rede altamente redundante e confiável, onde cada dispositivo tem uma conexão direta com todos os outros.</p>
+                    </ol>
+                </section>
                 <h2>Transmissão de dados</h2>
+                <ul>
+                    <li><h3>Síncrona:</h3></li>
+                    <p>Neste tipo de transmissão, os dados são enviados em um ritmo constante, seguindo um relógio compartilhado entre o transmissor e o receptor. Os dados são transmitidos em blocos, chamados de quadros, e são sincronizados com o ritmo do relógio. Isso significa que o transmissor e o receptor estão alinhados no tempo durante toda a transmissão.</p>
+                    <li><h3>Assíncrona:</h3></li>
+                    <p>Neste tipo de transmissão, os dados são enviados de forma independente, sem uma conexão de sincronização rígida entre o transmissor e o receptor. Cada caractere ou bloco de dados é enviado individualmente, com informações adicionais para identificar o início e o fim de cada transmissão. Isso permite que os dispositivos enviem dados em seu próprio ritmo, sem depender de um relógio compartilhado. <br> <br></p>
+                    <li><h3>Série:</h3></li>
+                    <p>Na transmissão de dados em série, os bits de dados são enviados um após o outro, em uma única linha de comunicação. Cada bit é transmitido sequencialmente, geralmente em uma sequência de 0s e 1s.</p>
+                    <li><h3>Paralela:</h3></li>
+                    <p>Na transmissão de dados em paralelo, vários bits de dados são transmitidos simultaneamente, utilizando varias linhas de comunicação. Cada bit é enviado em uma linha separada, permitindo que vários bits sejam transmitidos ao mesmo tempo. <br> <br></p>
+                    <li><h3>Simplex:</h3></li>
+                    <p>Na transmissão simplex, a comunicação ocorre em apenas uma direção. Um dispositivo transmite dados para outro dispositivo, mas não há uma transmissão bidirecional.</p>
+                    <li><h3>Half-Duplex:</h3></li>
+                    <p>Na transmissão half-duplex, a comunicação ocorre em ambas as direções, mas não simultaneamente. Os dispositivos podem transmitir e receber dados, mas em momentos diferentes.</p>
+                    <li><h3>Full-Duplex:</h3></li>
+                    <p>Na transmissão full-duplex, a comunicação ocorre em ambas as direções simultaneamente. Os dispositivos podem transmitir e receber dados ao mesmo tempo.</p>
+                </ul>
+                <h2>Codificação</h2>
+                <section class="Middle">
+                    <img src="/IMG/Clock.JPG" alt="">
+                </section>
+                <ul>
+                    <li><h3>NRZ:</h3></li>
+                    <p>Na codificação NRZ, cada bit de dados é representado por um nível de tensão constante ao longo de um determinado período de tempo. Um bit "1" é representado por uma tensão alta ou positiva, enquanto um bit "0" é representado por uma tensão baixa ou negativa.</p>
+                    <li><h3>Manchester:</h3></li>
+                    <p>Na codificação Manchester, cada bit de dados é dividido em duas fases dentro de um determinado período de tempo. Um bit "1" é representado por uma transição da tensão do nível alto para o nível baixo no meio do período e, em seguida, uma transição de volta ao nível alto. Um bit "0" é representado por uma transição da tensão do nível baixo para o nível alto no meio do período e, em seguida, uma transição de volta ao nível baixo. </p>
+                </ul>
+                <h2>Transmissão Diferencial</h2>
+                <p>Nela dois sinais são usados: um sinal positivo e um sinal negativo. A diferença de tensão entre esses dois sinais representa os dados a serem transmitidos. Se o sinal positivo estiver em um nível mais alto do que o sinal negativo, isso representa um "1", e se o sinal positivo estiver em um nível mais baixo do que o sinal negativo, isso representa um "0".</p>
+                <h2>Verificação de dados</h2>
+                <p>Durante a transmissão ou armazenamento de dados, podem ocorrer erros devido a ruídos, interferências ou problemas técnicos. A verificação de dados ajuda a detectar esses erros para garantir a integridade dos dados.</p>
+                <h2>Paridade de dados</h2>
+                <p>Na paridade de dados, um bit adicional, chamado de bit de paridade, é adicionado aos dados. Esse bit é calculado com base na quantidade de bits "1" presentes nos dados, no final ao receber os dados, o destinatário recalcula o bit de paridade e o compara com o bit recebido, caso haja diferença entre eles, isso indica que ocorreu um erro de transmissão.</p>
+                <ul>
+                    <li><h3>Par</h3></li>
+                    <p>O bit de paridade é definido como "1" se o número de bits "1" nos dados for ímpar. Caso contrário, o bit de paridade é definido como "0".</p>
+                    <li><h3>Ímpar</h3></li>
+                    <p>Ja quando é ímpar, o bit de paridade é definido como "1" se o número de bits "1" for par. Caso contrário, o bit de paridade é definido como "0".</p>
+                </ul>
             </section>
         </section>
     </main>

@@ -60,9 +60,9 @@ nav li {
   width: 80%;
   margin: 20px;
   margin-left: 10%;
-  border:2px solid #4e3837;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
 }
 
 .Box section{
