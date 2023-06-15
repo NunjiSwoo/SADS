@@ -16,7 +16,7 @@ body {
 /* Estilos do cabeçalho */
 header {
   display: flex;
-  background-image: linear-gradient(to bottom,#ffffff, #9198f2, #7581ec);
+  background-image: linear-gradient(to bottom, #9198f2, #7581ec);
   color: #000000;
   padding: 10px;
 }
@@ -100,6 +100,22 @@ nav li {
   width: 1000%;
 }
 
+.AboutMe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.AboutMe img{
+  width: 20%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.Box img{
+  border-radius: 5%;
+}
+
 main{
   color: #000000;
   padding-bottom: 10%;
@@ -170,6 +186,7 @@ main{
   cursor: pointer;
   transition: 0.2s;
 }
+
 .Navegation-Auto{
   position: absolute;
   width: 600px;
